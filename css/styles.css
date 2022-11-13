@@ -15,6 +15,7 @@
   --footer-icons-color: rgba(255, 255, 255, 0.1);
   --backdrop-bg-color: rgba(0, 0, 0, 0.2);
   --border-close-color: rgba(0, 0, 0, 0.1);
+  --bg-activities-color: rgba(47, 48, 58, 0.8);
 }
 
 body {
@@ -262,6 +263,26 @@ p {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-color);
+}
+.activities-item {
+  position: relative;
+}
+
+.activities-label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--bg-activities-color);
+  text-align: center;
 }
 
 /*-----TEAM-----*/
