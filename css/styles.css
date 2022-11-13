@@ -75,14 +75,13 @@ p {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .site-header a:hover,
-.site-header a:focus,
-.site-footer a:hover,
-.site-footer a:focus {
+.site-header a:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation .logo,
@@ -144,12 +143,12 @@ p {
 
 .contact-icon {
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-icon:hover,
 .contact-icon:focus {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----HERO-----*/
@@ -353,22 +352,22 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
   fill: var(--icons-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--white-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*-----CLIENTS-----*/
 
@@ -391,22 +390,22 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon {
   fill: var(--icons-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
 .client-link:focus {
   border-color: var(--accent-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----FOOTER-----*/
@@ -425,6 +424,7 @@ p {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-footer address {
@@ -444,11 +444,23 @@ p {
 
 .site-footer .map {
   color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-footer .mail,
 .site-footer .tel {
   color: var(--white-color-transparent);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-footer .logo:hover,
+.site-footer .logo:focus,
+.site-footer .map:hover,
+.site-footer .map:focus,
+.site-footer .mail:hover,
+.site-footer .mail:focus,
+.site-footer .tel:hover,
+.site-footer .tel:focus {
+  color: var(--accent-color);
 }
 
 .cta {
@@ -483,6 +495,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
@@ -492,7 +505,6 @@ p {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----MODAL-----*/
@@ -567,14 +579,14 @@ p {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
@@ -588,12 +600,12 @@ p {
 
 .project-item {
   width: calc((100% - 30px * 2) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item:hover,
 .project-item:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-item:hover .project-desc,
 .project-item:focus .project-desc {
